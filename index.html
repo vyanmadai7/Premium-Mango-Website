@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANGO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav id="nav">
+        <div class="nav-logo">MANGO<sup>®</sup></div>
+        <ul class="nav-links">
+            <li><a href="#section-origin">Origin</a></li>
+            <li><a href="#section-features">Quality</a></li>
+            <li><a href="#section-shop">Shop</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="nav-location">
+                <svg width="11" height="14" viewBox="0 0 11 14" fill="none">
+                    <path
+                        d="M5.5 0C3.015 0 1 2.015 1 4.5c0 3.375 4.5 9.5 4.5 9.5S10 7.875 10 4.5C10 2.015 7.985 0 5.5 0Zm0 6.125A1.625 1.625 0 1 1 5.5 2.875a1.625 1.625 0 0 1 0 3.25Z"
+                        fill="currentColor" />
+                </svg>
+                <span>Kanchanpur, Nepal</span>
+            </div>
+            <a href="#section-shop" class="nav-cta">Order Now</a>
+        </div>
+    </nav>
+
+    <div class="scroll-container" id="scrollContainer">
+        <div class="sticky-scene">
+            <div class="text-stage" id="textStage">
+
+                <div class="scene-panel" data-start="0" data-end="0.12">
+                    <div class="panel-content center">
+                        <p class="eyebrow"><span class="dot"></span>Nepal · Season 2026</p>
+                        <h1>The World's<br><em>Sweetest</em><br>Mango.</h1>
+                        <p class="sub">Handpicked from Kanchanpur soil.<br>Delivered to your door within 48
+                            hours.</p>
+                        <div class="cta-row">
+                            <a href="#section-shop" class="btn-fill">Shop Now</a>
+                            <a href="#section-origin" class="btn-ghost">Our Story ↓</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scene-panel" data-start="0.15" data-end="0.30">
+                    <div class="panel-content left">
+                        <span class="scene-tag">01 — Origin</span>
+                        <h2>Grown in<br>Kanchanpur's soil.</h2>
+                        <p>Kanchanpur's soil earned the Nepal a Guinness World Record for the
+                            sweetest mango on the planet.</p>
+                    </div>
+                </div>
+
+                <div class="scene-panel" data-start="0.33" data-end="0.48">
+                    <div class="panel-content right">
+                        <span class="scene-tag">02 — Quality</span>
+                        <h2>Brix 22+<br>Sugar Level.</h2>
+                        <p>Measurably sweeter than any commercially grown mango variety in the world. Pure. Natural.
+                            Unmatched.</p>
+                    </div>
+                </div>
+
+                <div class="scene-panel" data-start="0.51" data-end="0.66">
+                    <div class="panel-content left">
+                        <span class="scene-tag">03 — Process</span>
+                        <h2>Hand graded.<br>Grade A only.</h2>
+                        <p>Every single mango individually inspected by expert sorters. Only the finest fruit leaves our
+                            farms.</p>
+                    </div>
+                </div>
+
+                <div class="scene-panel" data-start="0.69" data-end="0.84">
+                    <div class="panel-content right">
+                        <span class="scene-tag">04 — Delivery</span>
+                        <h2>Farm to door<br>in 48 hours.</h2>
+                        <p>Continuous cold chain from harvest to your doorstep. Peak freshness locked in at every stage.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="scene-panel" data-start="0.87" data-end="1.0">
+                    <div class="panel-content center">
+                        <p class="eyebrow"><span class="dot"></span>Peak harvest: March – June</p>
+                        <h2>The season<br>is <em>short.</em></h2>
+                        <p class="sub">Reserve your allocation before it's gone.</p>
+                        <div class="cta-row">
+                            <a href="#section-shop" class="btn-fill">Reserve Your Box</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="scene-stats" id="sceneStats">
+                <div class="ss-item"><strong>48h</strong><span>Farm to Door</span></div>
+                <div class="ss-div"></div>
+                <div class="ss-item"><strong>22°</strong><span>Brix Sugar</span></div>
+                <div class="ss-div"></div>
+                <div class="ss-item"><strong>100%</strong><span>Organic</span></div>
+                <div class="ss-div"></div>
+            </div>
+
+            <div class="progress-bar" id="progressBar"></div>
+
+            <div class="scroll-hint" id="scrollHint">
+                <div class="sh-line"></div>
+                <span>Scroll</span>
+            </div>
+
+        </div>
+        <div class="scroll-spacer"></div>
+    </div>
+
+    <div class="normal-sections" id="normalSections">
+
+        <section class="origin-section" id="section-origin">
+            <div class="origin-img-col">
+                <div class="origin-img-wrap js-reveal">
+                    <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&q=80&w=900"
+                        alt="Mango farm Guimaras">
+                    <span class="img-tag">Guimaras Island · Philippines</span>
+                </div>
+                <div class="origin-float js-reveal">
+                    <strong>Guinness Record</strong>
+                    <span>World's Sweetest Mango</span>
+                </div>
+            </div>
+            <div class="origin-text-col">
+                <span class="section-tag js-reveal">01 — Origin</span>
+                <h2 class="js-reveal">Grown in<br>volcanic soil.</h2>
+                <p class="js-reveal">Kanchanpur rich soil earth earned the Nepal a Guinness World
+                    Record for the sweetest mango on earth. Third-generation farmers. Zero chemicals. Zero shortcuts.
+                </p>
+                <div class="info-table js-reveal">
+                    <div class="it-row"><span>Variety</span><strong>Carabao (Mangifera Indica)</strong></div>
+                    <div class="it-row"><span>Place</span><strong>Kanchanpur</strong></div>
+                    <div class="it-row"><span>Altitude</span><strong>IDK</strong></div>
+                    <div class="it-row"><span>Peak Harvest</span><strong>March – June</strong></div>
+                    <div class="it-row"><span>Certifications</span><strong>USDA Organic · Non-GMO</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="section-features">
+            <div class="section-head">
+                <span class="section-tag js-reveal">02 — The Mango</span>
+                <h2 class="js-reveal">Every detail,<br><em>considered.</em></h2>
+            </div>
+            <div class="feat-grid">
+                <div class="feat-card js-reveal">
+                    <span class="feat-n">01</span>
+                    <h3>Fibreless Flesh</h3>
+                    <p>Silk-smooth and completely fibre-free. Pure indulgence in every single bite.</p>
+                </div>
+                <div class="feat-card js-reveal">
+                    <span class="feat-n">02</span>
+                    <h3>Brix 22+ Sugar</h3>
+                    <p>Natural sugar at 22° Brix — sweeter than any commercially grown variety worldwide.</p>
+                </div>
+                <div class="feat-card js-reveal">
+                    <span class="feat-n">03</span>
+                    <h3>Hand Graded</h3>
+                    <p>Every mango individually inspected. Only Grade A fruit leaves our farms. No exceptions.</p>
+                </div>
+                <div class="feat-card js-reveal">
+                    <span class="feat-n">04</span>
+                    <h3>Cold Chain</h3>
+                    <p>Continuous cold chain from harvest to doorstep. Freshness preserved at every stage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-section" id="section-shop">
+            <div class="section-head">
+                <span class="section-tag js-reveal">03 — Shop</span>
+                <h2 class="js-reveal">Choose your<br><em>harvest.</em></h2>
+            </div>
+            <div class="shop-grid">
+                <div class="prod-card js-reveal">
+                    <div class="prod-img">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&q=80&w=700"
+                            alt="Tasting Box">
+                        <span class="prod-tag">Best Seller</span>
+                    </div>
+                    <div class="prod-info">
+                        <h3>The Tasting Box</h3>
+                        <p>6 premium Carabao mangoes, hand-selected at peak ripeness.</p>
+                        <div class="prod-row">
+                            <span class="price">$24<sup>.99</sup></span>
+                            <button class="add-btn">Add to Bag +</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-card prod-featured js-reveal">
+                    <div class="prod-img">
+                        <img src="https://images.unsplash.com/photo-1590502593747-42a996133562?auto=format&fit=crop&q=80&w=700"
+                            alt="Grower's Dozen">
+                        <span class="prod-tag accent">Recommended</span>
+                    </div>
+                    <div class="prod-info">
+                        <h3>The Grower's Dozen</h3>
+                        <p>12 mangoes from a single traceable farm. Personal. Exceptional.</p>
+                        <div class="prod-row">
+                            <span class="price">$44<sup>.99</sup></span>
+                            <button class="add-btn">Add to Bag +</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-card js-reveal">
+                    <div class="prod-img">
+                        <img src="https://images.unsplash.com/photo-1605027990121-cbae9e0642df?auto=format&fit=crop&q=80&w=700"
+                            alt="Gift Crate">
+                        <span class="prod-tag">Gift Ready</span>
+                    </div>
+                    <div class="prod-info">
+                        <h3>The Gift Crate</h3>
+                        <p>24 mangoes in a handcrafted wooden crate. A gift that stays remembered.</p>
+                        <div class="prod-row">
+                            <span class="price">$79<sup>.99</sup></span>
+                            <button class="add-btn">Add to Bag +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <div class="section-head">
+                <span class="section-tag js-reveal">04 — Reviews</span>
+                <h2 class="js-reveal">What people<br><em>are saying.</em></h2>
+            </div>
+            <div class="reviews-grid">
+                <blockquote class="rev-card js-reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>"I've had mangoes from Thailand, India, Mexico — nothing compares. These are on a completely
+                        different level."</p>
+                    <footer>Marco V. — New York</footer>
+                </blockquote>
+                <blockquote class="rev-card js-reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>"The packaging alone tells you these people care. The mangoes themselves? Absolutely
+                        life-changing."</p>
+                    <footer>Sarah K. — London</footer>
+                </blockquote>
+                <blockquote class="rev-card js-reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>"Ordered Tuesday, arrived Thursday, eaten by Friday. I've already re-ordered twice this month."
+                    </p>
+                    <footer>James L. — Toronto</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="final-cta js-reveal">
+            <div class="fct-bg"></div>
+            <div class="fct-content">
+                <p class="fct-eyebrow"><span></span>Peak harvest runs March – June</p>
+                <h2>The season<br>is <em>short.</em></h2>
+                <p class="fct-sub">Reserve your allocation before it's gone.<br>Every box ships within 24 hours of
+                    harvest.</p>
+                <a href="#section-shop" class="btn-fill large">Reserve Your Box</a>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="foot-top">
+                <div class="foot-logo">MANGO<sup>®</sup></div>
+                <nav class="foot-nav">
+                    <a href="#">Origin</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="foot-bottom">
+                <span>© 2025 MANGO. All rights reserved.</span>
+                <span>Kanchanpur, Nepal</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
