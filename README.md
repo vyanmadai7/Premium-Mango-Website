@@ -18,8 +18,6 @@ A premium, Apple-style scroll-driven 3D product website for selling Carabao mang
     └── ezgif-frame-080.png
 ```
 
----
-
 ## How the 3D Effect Works
 
 The website uses a **scroll-driven frame sequence** technique — the same approach used on Apple product pages.
