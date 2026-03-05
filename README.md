@@ -2,7 +2,6 @@
 
 A premium, Apple-style scroll-driven 3D product website for selling Carabao mangoes from Kanchanpur, Nepal. Built with pure HTML, CSS, and vanilla JavaScript, no frameworks, no dependencies.
 
----
 
 ## Project Structure
 
