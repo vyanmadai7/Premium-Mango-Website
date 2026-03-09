@@ -24,7 +24,7 @@ The website uses a **scroll-driven frame sequence** technique — the same appro
 
 1. 80 PNG frames of a rotating mango are preloaded into memory on page open.
 2. A `<canvas>` element is fixed full-screen (`position: fixed`, `100vw × 100vh`) as the page background.
-3. As the user scrolls through a `600vh` tall scroll spacer, the scroll progress (0–100%) is mapped to frame index (0–79).
+3. As the user scrolls through a `600vh` tall scroll spacer, the scroll progress (0–100%) is mapped to frame index (0–79)..
 4. Each frame is drawn to the canvas using `Math.max` cover-scaling so the mango fills the entire screen edge to edge..
 5. Lerp smoothing (`currentFrame += (target - current) * 0.09`) gives the animation a weighted, cinematic feel.
 
