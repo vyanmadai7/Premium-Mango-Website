@@ -37,7 +37,7 @@ The mango appears to rotate in full 3D purely through scroll — no WebGL, no Th
 The `frame/` folder is **not included** and must be added manually.
 
 - Place exactly **80 PNG images** inside a folder named `frame/` in the same directory as `index.html`.
-- Files must be named: `ezgif-frame-001.png` through `ezgif-frame-080.png` (zero-padded to 3 digits).
+- Files must be named: `ezgif-frame-001.png` through `ezgif-frame-080.png` (zero-padded to 3 digits)..
 - Recommended resolution: **1080×1080px or higher** for sharp display on retina screens.
 - Transparent background PNGs work best — the black canvas shows through behind the mango.
 
